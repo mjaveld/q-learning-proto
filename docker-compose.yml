@@ -1,0 +1,10 @@
+version: '3.9'
+
+services: 
+    python-gpu:
+        build: ./docker
+        image: py-vdev:1.0
+        volumes: 
+            - "./src:/usr/src/qml"
+        tty: true
+        stdin_open: true
